@@ -1,0 +1,33 @@
+body {
+  font-family: verdana, Tahoma, "Trebuchet MS", sans-serif;
+  color: rgb(200, 100, 64);
+}
+
+.test {
+  color: red;
+}
+
+.main-heading {
+  width: fit-content;
+  color: brown;
+  background-color: antiquewhite;
+  font-size: 42px;
+}
+
+.sub-heading {
+  color: brown;
+}
+
+.links {
+  width: fit-content;
+  list-style: circle;
+  background-color: antiquewhite;
+}
+
+.links > li a {
+  color: aqua;
+}
+
+.ingredients {
+  list-style: circle;
+}
