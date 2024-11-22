@@ -1,33 +1,103 @@
-body {
-  font-family: verdana, Tahoma, "Trebuchet MS", sans-serif;
-  color: rgb(200, 100, 64);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.test {
-  color: red;
+body {
+  font-family: "Merienda", verdana, Tahoma, "Trebuchet MS", sans-serif;
+  background-color: blanchedalmond;
+  color: rgb(55, 50, 50);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 16px;
+  background-image: repeating-linear-gradient(
+      0deg,
+      #333333,
+      #333333 21.5px,
+      transparent 25px,
+      transparent 37.04px,
+      #333333 39px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #333333,
+      #333333 21.5px,
+      transparent 25px,
+      transparent 37.04px,
+      #333333 39px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #333333,
+      #333333 21.5px,
+      transparent 25px,
+      transparent 37.04px,
+      #333333 39px
+    ),
+    repeating-linear-gradient(
+      270deg,
+      #333333,
+      #333333 21.5px,
+      transparent 25px,
+      transparent 37.04px,
+      #333333 39px
+    );
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .main-heading {
-  width: fit-content;
-  color: brown;
-  background-color: antiquewhite;
-  font-size: 42px;
-}
-
-.sub-heading {
-  color: brown;
+  font-size: 48px;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 16px;
 }
 
 .links {
-  width: fit-content;
-  list-style: circle;
-  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-.links > li a {
-  color: aqua;
+.card {
+  width: 220px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09);
+  transition: all 0.3s;
 }
 
-.ingredients {
-  list-style: circle;
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
 }
